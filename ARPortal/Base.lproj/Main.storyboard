@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARPortal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0X3-UQ-veJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JID-9e-ESO">
+                                <rect key="frame" x="124.5" y="60" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0X3-UQ-veJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FUB-zj-aOT"/>
+                            <constraint firstItem="0X3-UQ-veJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LvO-kR-g6v"/>
+                            <constraint firstItem="JID-9e-ESO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OTA-CN-aYg"/>
+                            <constraint firstItem="0X3-UQ-veJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QeP-zL-iYH"/>
+                            <constraint firstItem="0X3-UQ-veJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fcQ-fS-8py"/>
+                            <constraint firstItem="JID-9e-ESO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8Y-pp-ugD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="planeDetected" destination="JID-9e-ESO" id="Rxv-Pt-pwe"/>
+                        <outlet property="sceneView" destination="0X3-UQ-veJ" id="BcI-aO-ywf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
